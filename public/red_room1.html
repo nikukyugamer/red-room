@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta http-equiv=Content-Type content="text/html;  charset=SHIFT_JIS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>red_room1</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <style type = "text/css">
+      * {
+        color: white;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .game-container {
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 4/3;
+        margin: 0 auto;
+      }
+
+      object, embed {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* スマートフォン対応 */
+      @media screen and (max-width: 480px) {
+        body {
+          padding: 10px;
+        }
+
+        .game-container {
+          max-width: 95vw;
+        }
+      }
+
+      /* タブレット対応 */
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        .game-container {
+          max-width: 80vw;
+        }
+      }
+
+      /* デスクトップ対応 */
+      @media screen and (min-width: 769px) {
+        .game-container {
+          max-width: 400px;
+        }
+      }
+    </style>
+  </head>
+<body>
+  <div class="game-container">
+    <object
+      classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+      codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+      width="400" height="300" id="red_room1" align=""
+    >
+      <param name="movie" value="red_room1.swf">
+      <param name="quality" value="high">
+      <param name="bgcolor" value="#000000">
+      <embed
+        src="red_room1.swf" quality="high" bgcolor="#000000"
+        width="400" height="300" name="red_room1" align=""
+        type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"
+      ></embed>
+    </object>
+  </div>
+</body>
+</html>
