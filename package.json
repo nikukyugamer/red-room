@@ -1,0 +1,8 @@
+{
+  "name": "red-room",
+  "version": "0.0.1",
+  "devDependencies": {
+    "biome": "^0.3.3",
+    "wrangler": "^4.18.0"
+  }
+}
